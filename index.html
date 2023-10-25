@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="gonzalo, ayrton">
+    <meta name="description" content="prueba 1 de la unidad 2">
+    <meta name="keywords" content="HTML, CSS, JS y bootstrap">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E1-U2</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</head>
+<link rel="stylesheet" href="./assets/css/estilos.css">
+<body>
+    <div class="container-fluid">
+        <div class="row" id="inicio">
+            <div class="col-7   " id="imagen">
+                <table>
+                    <tr>
+                        <th id="img"><img src="./assets/images/logo_cft_estatal.jpeg" alt="logo_cft" width="100px" ></th>
+                        <th><a href="">inicio</a></th>
+                        <th><a href="">Admisión</a></th>
+                        <th><select class="form-select form-select-sm" aria-label="Small select example">
+                            <option selected>Carreras</option>
+                            <option value="1">TNS en Informática y Aplicaciones Tecnológicas</option>
+                            <option value="2">TNS en Proyectos Eléctricos de Distribución</option>
+                            <option value="3">TNS en Fabricación y Montaje de Estructuras Metálicas</option>
+                            <option value="4">TNS en Obras Civiles</option>
+                            <option value="5">TNS en Electromecánico con mención en Electromovilidad</option>
+                            <option value="6">TNS en Enfermería Mención Gerontología</option>
+                            <option value="7">TNS Superior en Laboratorio Clínico, Banco de Sangre e Imagenología</option>
+                            <option value="8">TNS en Veterinaria</option>
+                            <option value="9">TNS en Estética mención Masoterapia</option>
+                            <option value="10">TNS en Gestión Contable</option>
+                            <option value="11">TNS en Gestión de Recursos Humanos</option>
+                            <option value="12">TNS en Administración de Empresas</option>
+                            <option value="13">TNS en Gestión de Comercio Exterior</option>
+                            <option value="14">TNS en Control de Gestión y Logística</option>
+                            <option value="15">TNS en Agrícola</option>
+                            <option value="16">TNS Superior en Administración Publica, mención Gestión Jurídica</option>
+                            <option value="17">TNS Superior en Educación Especial</option>
+                            <option value="18">TNS Superior en Trabajo Social</option>
+                            <option value="19">TNS en Educación Parvularia y Primer ciclo de  Educación Básica</option>
+                          </select></th>
+                        <th id="cinco"><a href="">Contactanos</a></th>
+                    </tr>
+                </table>
+            </div>
+            <div class="col-2"></div>
+            <div class="col-3" id="dos">
+                <input class="form-control form-control-sm" type="text" name="buscar" placeholder="Busca tu carrera">
+                <button>Buscar</button>
+            </div>
+        </div>
+
+        <div class="row">
+            <img src="./assets/images/portada.jpeg" alt="portada" height="350px" width="100%">
+        </div>
+
+        <div class="row" id="p">
+            <p>Si tienes dudas. Usa nuestro formulario de contacto para realizar las preguntas que necesites recuerda que estamos para ayudarte y ofrecerte una educacion de calidad</p>
+        </div>
+
+        
+            <div class="row">
+                <div class="col-4"></div>
+                <div class="col-4" id="h1"><h1>Formulario</h1></div>
+                <div class="col4"></div>
+            </div>
+        <div id="formulario">
+            <div class="row">
+                <div class="col-4"></div>
+                <div class="col-4"><input class="form-control form-control-sm" type="text" name="nombre" placeholder="Nombre"></div>
+                <div class="col4"></div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-4"></div>
+                <div class="col-4"><input class="form-control form-control-sm" type="text" name="apellido" placeholder="Apellido"></div>
+                <div class="col4"></div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-4"></div>
+                <div class="col-4"><input class="form-control form-control-sm" type="text" name="telefono" placeholder="Telefono"></div>
+                <div class="col4"></div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-4"></div>
+                <div class="col-4"><input class="form-control form-control-sm" type="text" name="carrera" placeholder="Carrera"></div>
+                <div class="col4"></div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-4"></div>
+                <div class="col-4"><input class="form-control form-control-sm" type="text" name="edad" placeholder="Edad"></div>
+                <div class="col4"></div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-4"></div>
+                <div class="col-4"><textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="mensaje" placeholder="mensaje"></textarea></div>
+                <div class="col4"></div>
+            </div>
+            <br>
+            <div class="row" id="boton">
+                <div class="col-4"></div>
+                <div class="col-4 boton"><button onclick="enviarDatos()" class="btn btn-primary mb-2">enviar</button></div>
+                <div class="col4"></div>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/javascript/codigo.js"></script>
+</body>
+</html>
